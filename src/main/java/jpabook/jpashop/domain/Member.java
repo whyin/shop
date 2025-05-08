@@ -23,7 +23,7 @@ public class Member {
     @Embedded
     private Address address;
 
-    @OneToMany(mappedBy = "member")
+    @OneToMany(mappedBy = "member") // member라는 이름으로 참조하고 있어!
     private List<Order> orders = new ArrayList<>(); //컬렉션 바꾸지 마라 (왜?)
 
 
